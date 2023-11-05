@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Калькулятор личных финансов</title>
+	<!-- Для красоты -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- инструкция -->
+<link rel="stylesheet" href="name/.Инструкция.html">
+<!-- Таблицы -->
+<!-- <link rel="stylesheet" href="index.html"> -->
+<!-- Кнопка для добавления строки -->
+
+
+</head>
+<body>
+	
+	
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-12">
+				  <!-- Вся навигационная панель -->
+				<div class="box-0">
+					<div class="row">
+		                 <div class="col-lg-4 col-xs-6">
+		                 	 <!--Коробка для таблицы -->
+			                  <div class="box-1"> 
+			                  		<button type="button" class="btn btn-primary btn-lg btn-block "> Таблица </button>
+			                  	</div>
+		                 </div>
+	
+
+		<div class="col-lg-offset-4 col-lg-4 col-xs-6">
+			<!-- Коробка для интрукции -->
+			<div class="box-2">
+				<button class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#my-modal"> Инструкция </button>
+			</div>
+		</div>
+		<!-- Модальное окно -->
+		<div class="modal fade" id="my-modal">
+			<!-- Белое окно -->
+  <div class="modal-dialog modal-lg" >
+  	<!-- Содержимое -->
+    <div class="modal-content">
+    	<!-- Заголовок верх -->
+      <div class="modal-header">
+      	<!-- Кнопка закрыть -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <!-- Заголовок -->
+        <h3 class="modal-title">Инструкция</h3>
+      </div>
+      <!-- Тело модального окна(контент) -->
+      <div class="modal-body">
+        <h4 class="Title"><strong>Здравствуйте дорогие пользователи!!!</strong></h4>
+        <p><strong>1.</strong> В окно <strong>ПОЛУЧЕНО</strong> нужно записать колличество денежных средств которые вы получили.</p>
+        <p><STRONG>2.</STRONG> В окно <strong>ПОТРАЧЕНО</strong> нужно записать сколько вы потратили. <i>(Если нечего <Strong>—</Strong> то пишите <strong>0</strong>)</i></p> 
+        <p><strong>3.</strong> В окно <strong>НА ЧТО ПОТРАЧЕНО</strong> можно записать то на что потратили свои финансы. <i>(Данная строка является <ins>не обязательной</ins> к заполнению)</i></p>
+        <p><strong>4.</strong> Окна <Strong>ДАТА</Strong> и <strong>ОСТАЛОСЬ</strong> заполняются <ins>автоматически.</ins></p>
+        <p><strong>5.</strong> Что-бы создать новую строчку нужно нажать кнопку <strong>ДОБАВИТЬ СТРОКУ</strong>. (<INS>Она находится ниже таблицы</INS>)</p>
+      </div>
+      <!-- Низ модального окна -->
+      <div class="modal-footer">
+      	<p>Удачного пользования!!!   <i>(Если возникнут вопросы то пишите на почту: <ins>coffipetrov228@gmail.com </ins>).</i></p>
+      	<div class="cls">
+      		<button type="button" class="btn btn-primary " data-dismiss="modal">Закрыть</button>
+      	</div>
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- ссылка от jQuery -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<!-- подключение js -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+
+		<!-- <div class="col-lg-4 col-xs-12"> -->
+			<!-- Вход-Регестрация -->
+			<!-- <div class="box-3"> -->
+				<!-- Вход -->
+				<!-- <div class="box-3-1">
+					<div class="row">
+						<div class="col-lg-12">
+					<button type="button" class="btn btn-warning btn-lg btn-block "> <strong>Вход</strong>  </button>
+				
+						</div>
+					</div>
+				</div> -->
+				<!-- Регестрация -->
+				<!-- <div class="box-3-2">
+					<div class="row">
+						<div class="col-lg-12">
+				<button type="button" class="btn btn-warning btn-lg btn-block "> <strong>Регистрация</strong> </button>
+						</div>
+					</div>
+					
+				</div>
+				
+			
+
+			</div>
+		</div> -->
+					
+					</div>
+				</div>
+
+			</div>
+			</div>
+		</div>
+
+<!-- Заголовок  -->
+	<div class="container">
+		<div class="row">
+			<div class="box-text">
+				<div class="col-lg-offset-3 col-lg-6">
+					<h1 class="text">Калькулятор личных финансов</h1>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+<!-- Таблица -->
+	<div class="container">
+		<div class="row">
+			<!-- Основа -->
+			<div class="box-tablo">
+				<div class="col-lg-offset-1 col-lg-10">
+					<div class="table-responsive">
+						<table class="table table-hover table-bordered">
+							<thead>
+								<tr>
+								<th>Дата</th>
+								<th>Получено</th>
+								<th>Потрачено</th>
+								<th>На что потрачено?</th>
+								<th>Осталось</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<th scope="row"><input type="text" class="form-control" placeholder="Сколько получил?"></th>
+									<td><input type="text" class="form-control" placeholder="Сколько потратил?"></td>
+									<th scope="row"><textarea class="form-control" rows="1"></textarea></th>
+									<td></td>
+								</tr>
+
+							</tbody>
+							
+
+							
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Кнопка для создания таблицы -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-offset-5 col-lg-2 col-xs-offset-4 col-xs-4">
+				<button class="btn btn-success btn-block">
+					<div class="str">
+					Добавить строку
+					</div>
+ 				</button>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
