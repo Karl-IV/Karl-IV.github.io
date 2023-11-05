@@ -11,6 +11,9 @@
 <link rel="stylesheet" href="name/.Инструкция.html">
 <!-- Таблицы -->
 <link rel="stylesheet" href="index.html">
+<!-- Кнопка для добавления строки -->
+<!-- <link rel="stylesheet" href="js/bootstrap.js"> -->
+
 
 </head>
 <body>
@@ -88,10 +91,30 @@
 		<div class="row">
 			<!-- Основа -->
 			<div class="box-tablo">
-				<div class="col-lg-offset-2 col-lg-8">
+				<div class="col-lg-offset-1 col-lg-10">
 					<div class="table-responsive">
 						<table class="table table-hover table-bordered">
+							<thead>
+								<tr>
+								<th>Дата</th>
+								<th>Получено</th>
+								<th>Потрачено</th>
+								<th>На что потрачено</th>
+								<th>Осталось</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<th scope="row"><input type="text" class="form-control" placeholder="Text input"></th>
+									<td><input type="text" class="form-control" placeholder="Text input"></td>
+									<th scope="row"><textarea class="form-control" rows="1"></textarea></th>
+									<td></td>
+								</tr>
+
+							</tbody>
 							
+
 							
 						</table>
 					</div>
@@ -99,7 +122,18 @@
 			</div>
 		</div>
 	</div>
+	<!-- Кнопка для создания таблицы -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-offset-5 col-lg-2">
+				<button type="button" class="btn btn-success btn-block">
+					<div class="str">
+					Добавить строку
+					</div>
+ 				</button>
+			</div>
+		</div>
+	</div>
 		
-
 </body>
 </html>
