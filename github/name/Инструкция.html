@@ -3,41 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>instruction</title>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="index.html">
-	<link rel="stylesheet" href="css/style.css">
-
+	<title>Document</title>
 </head>
-
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="box-0">
-					<div class="row">
-		                 <div class="col-lg-4 col-xs-12">
-			                  <div class="box-1"> 
-
-			                  		<a href="src/index.html"><button type="button" class="btn btn-primary btn-lg btn-block "> Таблица </button></a>
-			                  	</div>
-			                  	</div>
-			<div class="col-lg-offset-6">
-				<div class="box-2">
-			                  		<h1> <strong >Инструкция</strong> </h1>
-			                  	</div>
-			</div>
-			                  	
-
-
-
-
-
-
-
-
-
-
+	<p id="summary">
+  In the following table, characteristics are given in the second column, with the negative side in the left column and the positive side in the right column.
+</p>
+<table aria-describedby="summary">
+  <caption>Characteristics with positive and negative sides</caption>
+  <thead>
+    <tr>
+      <th id="n">Negative</th>
+      <th>Characteristic</th>
+      <th>Positive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td headers="n r1">Sad</td>
+      <th id="r1">Mood</th>
+      <td>Happy</td>
+    </tr>
+    <tr>
+      <td headers="n r2">Failing</td>
+      <th id="r2">Grade</th>
+      <td>Passing</td>
+    </tr>
+</table>
 </body>
-
 </html>

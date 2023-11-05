@@ -1,41 +1,23 @@
-/*Colors*/
-/*Basic settings */
-html {
-  font-size: 10px;
+body {
+  background-color: #18091AEC;
 }
-.button {
-  background-color: #ffa500;
-  color: #ffffff;
-  padding: 1rem 3rem;
-  border-radius: 8px;
-  text-transform: uppercase;
-  border: none;
+/*Вся навигационная панель*/
+.box-0 {
+  margin: 1rem;
 }
-/*Typography*/
-section {
-  padding: 10rem 0;
+/*Вход*/
+.box-3-1,
+.box-3-2 {
+  margin: 0px 0px 5px 0px;
 }
-/*main*/
-main {
-  padding: 3rem;
+/*Заголовок(Калькулятор личных финансов)*/
+.text {
+  color: #FFF4F4FF;
 }
-.header {
-  height: 7rem;
+.box-text {
+  margin: 5rem 0px 0px 0px ;
 }
-.wrap {
-  display: table;
-  height: 7rem;
-  width: 100%;
-}
-.wrap-block {
-  display: table-cell;
-  vertical-align: middle;
-}
-.phone-link {
-  display: inline-block;
-  color: #000000;
-  font-weight: 900;
-  font-size: 2rem;
-  height: 7rem;
-  line-height: 7rem;
+/*Таблица*/
+.box-tablo {
+  border: 2px solid #000;
 }
