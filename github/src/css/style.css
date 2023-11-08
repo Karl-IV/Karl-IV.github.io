@@ -41,7 +41,7 @@ body {
   cursor: pointer;
   text-align: center;
 }
-/*Кнопка для добавления строки*/
+/*Прозрачность при наведении*/
 .str {
   text-transform: capitalize;
   cursor: pointer;
@@ -71,4 +71,10 @@ body {
   background-color: #FF51BFFF;
   -webkit-transition: width 0.8s;
   transition: width 0.8s;
+}
+table,
+td {
+  border: 2px solid black;
+  text-align: center;
+  margin: 1rem;
 }
