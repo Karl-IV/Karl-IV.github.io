@@ -1,5 +1,6 @@
 body {
-  background-color: #18091AEC;
+  background-image: url("https://github.com/Karl-IV/Karl-IV.github.io/blob/main/github/src/img/bg.png?raw=true");
+  background-repeat: repeat;
 }
 /*Вся навигационная панель*/
 .box-0 {
@@ -22,20 +23,15 @@ body {
 .cls {
   text-align: right;
 }
-/*Вход*/
-.box-3-1,
-.box-3-2 {
-  margin: 0px 0px 5px 0px;
-}
 /*Заголовок(Калькулятор личных финансов)*/
 .text {
-  color: #FFF4F4FF;
+  color: #E4717A;
   margin: 7rem 0px 2rem 0px;
   text-align: center;
 }
 /*Таблица*/
 .table {
-  background-color: #BBFFEE;
+  background-color: #FF7514;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
@@ -72,9 +68,23 @@ body {
   -webkit-transition: width 0.8s;
   transition: width 0.8s;
 }
+/*кнопка добавить строку*/
+.btn-l {
+  background-color: #77DD77;
+  color: #FFFFF0;
+}
+.btn-i {
+  background-color: #CFB53B;
+  color: #FFFFF0;
+}
+.btn-k {
+  background-color: #A2A2D0;
+  color: #FFFFF0;
+}
 table,
 td {
   border: 2px solid black;
   text-align: center;
   margin: 1rem;
+  color: #FFFFF0;
 }
