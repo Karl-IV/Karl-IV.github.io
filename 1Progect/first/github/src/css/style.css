@@ -1,0 +1,90 @@
+body {
+  background-image: url("https://github.com/Karl-IV/Karl-IV.github.io/blob/main/1Progect/first/src/img/bg%20money.png?raw=true");
+  background-repeat: repeat;
+}
+/*Вся навигационная панель*/
+.box-0 {
+  margin: 1rem;
+}
+/*Инструкция модальное окно*/
+.Title {
+  padding: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+/*Верх модального окна*/
+.modal-title {
+  text-align: center;
+}
+/*Низ модального окна*/
+.modal-footer {
+  text-align: left;
+}
+.cls {
+  text-align: right;
+}
+/*Заголовок(Калькулятор личных финансов)*/
+.text {
+  color: #E4717A;
+  margin: 7rem 0px 2rem 0px;
+  text-align: center;
+}
+/*Таблица*/
+.table {
+  background-color: #FF7514;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-align: center;
+}
+/*Прозрачность при наведении*/
+.str {
+  text-transform: capitalize;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+.str:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #FFFF00FF;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+.str:hover:after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 3px;
+  background-color: #FF51BFFF;
+  -webkit-transition: width 0.8s;
+  transition: width 0.8s;
+}
+/*кнопка добавить строку*/
+.btn-l {
+  background-color: #77DD77;
+  color: #FFFFF0;
+}
+.btn-i {
+  background-color: #CFB53B;
+  color: #FFFFF0;
+}
+.btn-k {
+  background-color: #A2A2D0;
+  color: #FFFFF0;
+}
+table,
+td {
+  border: 2px solid black;
+  text-align: center;
+  margin: 1rem;
+  color: #FFFFF0;
+}

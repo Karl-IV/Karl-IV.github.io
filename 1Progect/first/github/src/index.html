@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Калькулятор личных финансов</title>
+	<!-- Для красоты -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- инструкция -->
+<link rel="stylesheet" href="js/whot.js">
+<!-- Таблицы -->
+<!-- <link rel="stylesheet" href="index.html"> -->
+<!-- Кнопка для добавления строки -->
+<link rel="stylesheet" href="img/bg.png">
+
+
+</head>
+<body>
+	
+	
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-12">
+				  <!-- Вся навигационная панель -->
+				<div class="box-0">
+					<div class="row">
+		                 <div class="col-lg-4 col-xs-6">
+		                 	 <!--Коробка для таблицы -->
+			                  <div class="box-1"> 
+			                  		<button type="button" class="btn btn-k btn-lg btn-block "> Калькулятор </button>
+			                  	</div>
+		                 </div>
+	
+
+		<div class="col-lg-offset-4 col-lg-4 col-xs-6">
+			<!-- Коробка для интрукции -->
+			<div class="box-2">
+				<button class="btn btn-i btn-lg btn-block" data-toggle="modal" data-target="#my-modal"> Инструкция </button>
+			</div>
+		</div>
+		<!-- Модальное окно -->
+		<div class="modal fade" id="my-modal">
+			<!-- Белое окно -->
+  <div class="modal-dialog modal-lg" >
+  	<!-- Содержимое -->
+    <div class="modal-content">
+    	<!-- Заголовок верх -->
+      <div class="modal-header">
+      	<!-- Кнопка закрыть -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <!-- Заголовок -->
+        <h3 class="modal-title">Инструкция</h3>
+      </div>
+      <!-- Тело модального окна(контент) -->
+      <div class="modal-body">
+        <h4 class="Title"><strong>Здравствуйте дорогие пользователи!!!</strong></h4>
+        <p><strong>1.</strong> В окнe <Strong>ДАТА</Strong> вписать дату или выбрать сегодняшнее число.</ins></p>
+        <p><strong>2.</strong> В окно <strong>ПОЛУЧЕНО</strong> внесите колличество полученных денежных средств.</p>
+        <p><STRONG>3.</STRONG> В окно <strong>ПОТРАЧЕНО</strong> внесите потраченныю сумму. <i>(Если нечего <Strong>—</Strong> то пишите <strong>0</strong>)</i></p> 
+        <p><strong>4.</strong> В окно <strong>НА ЧТО ПОТРАЧЕНО</strong> записывается цель трат. <i>(Данная строка является <ins>не обязательной</ins> к заполнению)</i></p>
+        <p><strong>5.</strong> В окно <strong>ОСТАЛОСЬ</strong> <ins>нажать</ins> на кнопку (<strong>========</strong>).</p>
+        <p><strong>6.</strong> Для создания новой строки таблицы нажать кнопку <strong>ДОБАВИТЬ</strong>. (<INS>Данная кнопка находится под таблицей</INS>)</p>
+      </div>
+      <!-- Низ модального окна -->
+      <div class="modal-footer">
+      	<p>Удачного пользования!!!   <i>(Если возникнут вопросы, то пишите на почту разработчику: <ins>coffipetrov228@gmail.com </ins>).</i></p>
+      	<div class="cls">
+      		<button type="button" class="btn btn-primary " data-dismiss="modal">Закрыть</button>
+      	</div>
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- ссылка от jQuery -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<!-- подключение js -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+		<!-- <div class="col-lg-4 col-xs-12"> -->
+			<!-- Вход-Регестрация -->
+			<!-- <div class="box-3"> -->
+				<!-- Вход -->
+				<!-- <div class="box-3-1">
+					<div class="row">
+						<div class="col-lg-12">
+					<button type="button" class="btn btn-warning btn-lg btn-block "> <strong>Вход</strong>  </button>
+				
+						</div>
+					</div>
+				</div> -->
+				<!-- Регестрация -->
+				<!-- <div class="box-3-2">
+					<div class="row">
+						<div class="col-lg-12">
+				<button type="button" class="btn btn-warning btn-lg btn-block "> <strong>Регистрация</strong> </button>
+						</div>
+					</div>
+					
+				</div>
+				
+			
+
+			</div>
+		</div> -->
+					
+					</div>
+				</div>
+
+			</div>
+			</div>
+		</div>
+
+<!-- Заголовок  -->
+	<div class="container">
+		<div class="row">
+			<div class="box-text">
+				<div class="col-lg-offset-3 col-lg-6">
+					<h1 class="text">Калькулятор личных финансов</h1>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+<!-- Таблица -->
+	<div class="container">
+    <div class="row">
+      <!-- Основа -->
+      <div class="box-tablo">
+        <div class="col-lg-12">
+          <div class="table-responsive">
+            <table class="table table-hover table-bordered">
+              <thead>
+              	<!-- Первая строка -->
+                <tr>
+                <th>Дата</th>
+                <th>Получено</th>
+                <th>Потрачено</th>
+                <th>На что потрачено?</th>
+                <th>Осталось</th>
+                </tr>
+              </thead>
+              <tbody id="myTable" >
+                <tr >
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num1"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num2"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func()">========</button>
+                  	<p id="result"></p> 
+                  </td>
+                </tr>
+                </tbody>
+									<!-- Вторая строка -->
+<tbody id="myTable" >
+                <tr >
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num1"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num2"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func()">========</button>
+                  	<p id="result"></p> 
+                  </td>
+                </tr>
+                </tbody>              		<!-- 3 строка -->
+              <tbody id="myTable" >
+                <tr >
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num1"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num2"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func()">========</button>
+                  	<p id="result"></p> 
+                  </td>
+                </tr>
+                </tbody>
+              			<!-- 4 строка -->
+              <tbody id="myTable" >
+                <tr >
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num1"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num2"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func()">========</button>
+                  	<p id="result"></p> 
+                  </td>
+                </tr>
+                </tbody>
+              			<!-- 5 строка -->
+              <tbody id="myTable" >
+                <tr >
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num1"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num2"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func()">========</button>
+                  	<p id="result"></p> 
+                  </td>
+                </tr>
+                </tbody>
+              			<!-- 6 строка -->
+              <tbody id="myTable" >
+                <tr >
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num1"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num2"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func()">========</button>
+                  	<p id="result"></p> 
+                  </td>
+                </tr>
+                </tbody>
+              			<!-- 7 строка -->
+              <tbody id="myTable" >
+                <tr >
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num1"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num2"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func()">========</button>
+                  	<p id="result"></p> 
+                  </td>
+                </tr>
+                </tbody>
+              			<!-- 8 строка -->
+              <tbody id="myTable" >
+                <tr >
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num1"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num2"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func()">========</button>
+                  	<p id="result"></p> 
+                  </td>
+                </tr>
+                </tbody>
+
+            </table>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func(){
+         						 var num1 = Number(document.getElementById("num1").value);
+         						 var num2 = Number(document.getElementById("num2").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result").innerHTML = result;
+          						}
+ 								</script>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+	<!-- Кнопка для создания таблицы -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-offset-5 col-lg-2 col-xs-offset-4 col-xs-4">
+				<button class="btn  btn-l btn-block" id="addRow">
+					<div class="str">
+						<strong>
+							Добавить строку
+						</strong>
+					</div>
+ 				</button>
+			</div>
+		</div>
+	</div>
+<script href="js/whot.js">
+// Получаем ссылки на таблицу и кнопку
+const table = document.getElementById('myTable');
+const addRowButton = document.getElementById('addRow');
+
+// Обработчик клика по кнопке
+addRowButton.addEventListener('click', () => {
+    // Создаем новую строку
+    const newRow = table.insertRow();
+
+    // Создаем ячейки для таблицы 
+    var cell1 = newRow.insertCell(0);
+    var cell2 = newRow.insertCell(1);
+    var cell3 = newRow.insertCell(2);
+    var cell4 = newRow.insertCell(3);
+    var cell5 = newRow.insertCell(4);
+
+    // Задаем значения ячеек (можно получать их из формы или других источников)
+    cell1.textContent = '20.11.2023'
+    cell2.textContent = '10000' ;
+    cell3.textContent = '5000';
+    cell4.textContent = 'Мороженое';
+    cell5.textContent = '5000';
+});	
+
+</script>
+
+
+</body>
+</html>
