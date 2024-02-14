@@ -79,12 +79,12 @@ body {
 }
 .btn-k {
   background-color: #A2A2D0;
-  color: #FFFFF0;
+  color: #1E1E00FF;
 }
-table,
+ble,
 td {
   border: 2px solid black;
   text-align: center;
   margin: 1rem;
-  color: #FFFFF0;
+  color: #1E1E00FF;
 }

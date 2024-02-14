@@ -133,161 +133,952 @@
           <div class="table-responsive">
             <table class="table table-hover table-bordered">
               <thead>
-              	<!-- Первая строка -->
+              	<!-- 111111111111111 строка -->
                 <tr>
-                <th>Дата</th>
-                <th>Получено</th>
-                <th>Потрачено</th>
-                <th>На что потрачено?</th>
-                <th>Осталось</th>
+                	<th class="fat">№</th>
+                <th class="fat">Дата</th>
+                <th class="fat">Получено</th>
+                <th class="fat">Потрачено</th>
+                <th class="fat">На что потрачено?</th>
+                <th class="fat">Осталось</th>
                 </tr>
               </thead>
-              <tbody id="myTable" >
+              <tbody id="myTable1" >
                 <tr >
+                	<!-- Номер -->
+                	<td> <p>1</p> </td>
+                	<!-- Календарь -->
                   <td> <input type="date" class="form-control" autocomplete="on" ></td>
                   <!-- Сколько получил -->
-                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num1"></th>
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num11"></th>
                   <!-- Сколько потрптил -->
-                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num2"></td>
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num21"></td>
                   <!-- На что потратил -->
                   <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
                   <!-- кнопка подсчёта -->
                   <td> 
-                  	<button type="button" class="btn btn-default btn-xs" onclick="func()">========</button>
-                  	<p id="result"></p> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func1()">========</button>
+                  	<p id="result1"></p> 
                   </td>
                 </tr>
                 </tbody>
-									<!-- Вторая строка -->
-<tbody id="myTable" >
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func1(){
+         						 var num1 = Number(document.getElementById("num11").value);
+         						 var num2 = Number(document.getElementById("num21").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result1").innerHTML = result;
+          						}
+ 								</script>
+									<!-- 2 строка -->
+								<tbody id="myTable2" >
                 <tr >
+                	<!-- Номер -->
+                	<td> <p>2</p> </td>
+                	<!-- Календарь -->
                   <td> <input type="date" class="form-control" autocomplete="on" ></td>
                   <!-- Сколько получил -->
-                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num1"></th>
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num12"></th>
                   <!-- Сколько потрптил -->
-                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num2"></td>
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num22"></td>
                   <!-- На что потратил -->
                   <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
                   <!-- кнопка подсчёта -->
                   <td> 
-                  	<button type="button" class="btn btn-default btn-xs" onclick="func()">========</button>
-                  	<p id="result"></p> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func2()">========</button>
+                  	<p id="result2"></p> 
                   </td>
                 </tr>
-                </tbody>              		<!-- 3 строка -->
-              <tbody id="myTable" >
+                </tbody> 
+                <!-- Скрипт подсчёта -->
+           			<script>
+    							function func2(){
+         						 var num1 = Number(document.getElementById("num12").value);
+         						 var num2 = Number(document.getElementById("num22").value);
+         						 
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result2").innerHTML = result;
+          						}
+ 								</script>   
+                          		<!-- 3 строка -->
+              <tbody id="myTable3" >
                 <tr >
+                	<!-- Номер -->
+                	<td> <p>3</p> </td>
+                	<!-- Календарь -->
                   <td> <input type="date" class="form-control" autocomplete="on" ></td>
                   <!-- Сколько получил -->
-                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num1"></th>
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num13"></th>
                   <!-- Сколько потрптил -->
-                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num2"></td>
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num23"></td>
                   <!-- На что потратил -->
                   <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
                   <!-- кнопка подсчёта -->
                   <td> 
-                  	<button type="button" class="btn btn-default btn-xs" onclick="func()">========</button>
-                  	<p id="result"></p> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func3()">========</button>
+                  	<p id="result3"></p> 
                   </td>
                 </tr>
                 </tbody>
+                <!-- Скрипт подсчёта -->
+           			<script>
+    							function func3(){
+         						 var num1 = Number(document.getElementById("num13").value);
+         						 var num2 = Number(document.getElementById("num23").value);
+         						 var num3 = Number(document.getElementById("result1").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result3").innerHTML = result;
+          						}
+ 								</script>   
               			<!-- 4 строка -->
               <tbody id="myTable" >
                 <tr >
+                	<!-- Номер -->
+                	<td> <p>4</p> </td>
+                	<!-- Календарь -->
                   <td> <input type="date" class="form-control" autocomplete="on" ></td>
                   <!-- Сколько получил -->
-                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num1"></th>
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num14"></th>
                   <!-- Сколько потрптил -->
-                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num2"></td>
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num24"></td>
                   <!-- На что потратил -->
                   <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
                   <!-- кнопка подсчёта -->
                   <td> 
-                  	<button type="button" class="btn btn-default btn-xs" onclick="func()">========</button>
-                  	<p id="result"></p> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func4()">========</button>
+                  	<p id="result4"></p> 
                   </td>
                 </tr>
                 </tbody>
+                <!-- Скрипт подсчёта -->
+           			<script>
+    							function func4(){
+         						 var num1 = Number(document.getElementById("num14").value);
+         						 var num2 = Number(document.getElementById("num24").value);
+         						 var num3 = Number(document.getElementById("result1").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result4").innerHTML = result;
+          						}
+ 								</script>   
               			<!-- 5 строка -->
               <tbody id="myTable" >
                 <tr >
+                	<!-- Номер -->
+                	<td> <p>5</p> </td>
+                	<!-- Календарь -->
                   <td> <input type="date" class="form-control" autocomplete="on" ></td>
                   <!-- Сколько получил -->
-                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num1"></th>
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num15"></th>
                   <!-- Сколько потрптил -->
-                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num2"></td>
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num25"></td>
                   <!-- На что потратил -->
                   <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
                   <!-- кнопка подсчёта -->
                   <td> 
-                  	<button type="button" class="btn btn-default btn-xs" onclick="func()">========</button>
-                  	<p id="result"></p> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func5()">========</button>
+                  	<p id="result5"></p> 
                   </td>
                 </tr>
                 </tbody>
+                <!-- Скрипт подсчёта -->
+           			<script>
+    							function func5(){
+         						 var num1 = Number(document.getElementById("num15").value);
+         						 var num2 = Number(document.getElementById("num25").value);
+         						 var num3 = Number(document.getElementById("result1").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result5").innerHTML = result;
+          						}
+ 								</script>   
               			<!-- 6 строка -->
               <tbody id="myTable" >
                 <tr >
+                	<!-- Номер -->
+                	<td> <p>6</p> </td>
+                	<!-- Календарь -->
                   <td> <input type="date" class="form-control" autocomplete="on" ></td>
                   <!-- Сколько получил -->
-                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num1"></th>
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num16"></th>
                   <!-- Сколько потрптил -->
-                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num2"></td>
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num26"></td>
                   <!-- На что потратил -->
                   <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
                   <!-- кнопка подсчёта -->
                   <td> 
-                  	<button type="button" class="btn btn-default btn-xs" onclick="func()">========</button>
-                  	<p id="result"></p> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func6()">========</button>
+                  	<p id="result6"></p> 
                   </td>
                 </tr>
                 </tbody>
+                <!-- Скрипт подсчёта -->
+           			<script>
+    							function func6(){
+         						 var num1 = Number(document.getElementById("num16").value);
+         						 var num2 = Number(document.getElementById("num26").value);
+         						 var num3 = Number(document.getElementById("result1").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result6").innerHTML = result;
+          						}
+ 								</script>   
               			<!-- 7 строка -->
               <tbody id="myTable" >
                 <tr >
+                	<!-- Номер -->
+                	<td> <p>7</p> </td>
+                	<!-- Календарь -->
                   <td> <input type="date" class="form-control" autocomplete="on" ></td>
                   <!-- Сколько получил -->
-                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num1"></th>
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num17"></th>
                   <!-- Сколько потрптил -->
-                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num2"></td>
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num27"></td>
                   <!-- На что потратил -->
                   <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
                   <!-- кнопка подсчёта -->
                   <td> 
-                  	<button type="button" class="btn btn-default btn-xs" onclick="func()">========</button>
-                  	<p id="result"></p> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func7()">========</button>
+                  	<p id="result7"></p> 
                   </td>
                 </tr>
                 </tbody>
+                <!-- Скрипт подсчёта -->
+           			<script>
+    							function func7(){
+         						 var num1 = Number(document.getElementById("num17").value);
+         						 var num2 = Number(document.getElementById("num27").value);
+         						 var num3 = Number(document.getElementById("result1").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result7").innerHTML = result;
+          						}
+ 								</script>   
               			<!-- 8 строка -->
               <tbody id="myTable" >
                 <tr >
+                	<!-- Номер -->
+                	<td> <p>8</p> </td>
+                	<!-- Календарь -->
                   <td> <input type="date" class="form-control" autocomplete="on" ></td>
                   <!-- Сколько получил -->
-                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num1"></th>
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num18"></th>
                   <!-- Сколько потрптил -->
-                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num2"></td>
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num28"></td>
                   <!-- На что потратил -->
                   <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
                   <!-- кнопка подсчёта -->
                   <td> 
-                  	<button type="button" class="btn btn-default btn-xs" onclick="func()">========</button>
-                  	<p id="result"></p> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func8()">========</button>
+                  	<p id="result8"></p> 
                   </td>
                 </tr>
                 </tbody>
-
-            </table>
 <!-- Скрипт подсчёта -->
            			<script>
-    							function func(){
-         						 var num1 = Number(document.getElementById("num1").value);
-         						 var num2 = Number(document.getElementById("num2").value);
+    							function func8(){
+         						 var num1 = Number(document.getElementById("num18").value);
+         						 var num2 = Number(document.getElementById("num28").value);
           					 var result = num1 - num2;
 
-         						 document.getElementById("result").innerHTML = result;
+         						 document.getElementById("result8").innerHTML = result;
           						}
  								</script>
+ 								              			<!-- 9 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>9</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num19"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num29"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func9()">========</button>
+                  	<p id="result9"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func9(){
+         						 var num1 = Number(document.getElementById("num19").value);
+         						 var num2 = Number(document.getElementById("num29").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result9").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 10 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>10</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num110"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num210"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func10()">========</button>
+                  	<p id="result10"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func10(){
+         						 var num1 = Number(document.getElementById("num110").value);
+         						 var num2 = Number(document.getElementById("num210").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result10").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 11 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>11</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num111"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num211"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func11()">========</button>
+                  	<p id="result11"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func11(){
+         						 var num1 = Number(document.getElementById("num111").value);
+         						 var num2 = Number(document.getElementById("num211").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result11").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 12 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>12</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num112"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num212"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func12()">========</button>
+                  	<p id="result12"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func12(){
+         						 var num1 = Number(document.getElementById("num112").value);
+         						 var num2 = Number(document.getElementById("num212").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result12").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 13 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>13</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num113"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num213"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func13()">========</button>
+                  	<p id="result13"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func13(){
+         						 var num1 = Number(document.getElementById("num113").value);
+         						 var num2 = Number(document.getElementById("num213").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result13").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 14 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>14</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num114"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num214"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func14()">========</button>
+                  	<p id="result14"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func14(){
+         						 var num1 = Number(document.getElementById("num114").value);
+         						 var num2 = Number(document.getElementById("num214").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result14").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 15 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>15</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num115"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num215"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func15()">========</button>
+                  	<p id="result15"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func15(){
+         						 var num1 = Number(document.getElementById("num115").value);
+         						 var num2 = Number(document.getElementById("num215").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result15").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 16 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>16</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num116"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num216"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func16()">========</button>
+                  	<p id="result16"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func16(){
+         						 var num1 = Number(document.getElementById("num116").value);
+         						 var num2 = Number(document.getElementById("num216").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result16").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 17 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>17</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num117"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num217"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func17()">========</button>
+                  	<p id="result17"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func17(){
+         						 var num1 = Number(document.getElementById("num117").value);
+         						 var num2 = Number(document.getElementById("num217").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result17").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 18 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>18</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num118"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num218"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func18()">========</button>
+                  	<p id="result18"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func18(){
+         						 var num1 = Number(document.getElementById("num118").value);
+         						 var num2 = Number(document.getElementById("num218").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result18").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 19 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>19</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num119"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num219"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func19()">========</button>
+                  	<p id="result19"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func19(){
+         						 var num1 = Number(document.getElementById("num119").value);
+         						 var num2 = Number(document.getElementById("num219").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result19").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 20 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>20</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num120"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num220"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func20()">========</button>
+                  	<p id="result20"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func20(){
+         						 var num1 = Number(document.getElementById("num120").value);
+         						 var num2 = Number(document.getElementById("num220").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result20").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 21 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>21</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num121"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num221"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func21()">========</button>
+                  	<p id="result21"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func21(){
+         						 var num1 = Number(document.getElementById("num121").value);
+         						 var num2 = Number(document.getElementById("num221").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result21").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 22 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>22</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num122"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num222"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func22()">========</button>
+                  	<p id="result22"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func22(){
+         						 var num1 = Number(document.getElementById("num122").value);
+         						 var num2 = Number(document.getElementById("num222").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result22").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 23 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>23</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num123"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num223"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func23()">========</button>
+                  	<p id="result23"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func23(){
+         						 var num1 = Number(document.getElementById("num123").value);
+         						 var num2 = Number(document.getElementById("num223").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result23").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 24 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>24</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num124"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num224"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func24()">========</button>
+                  	<p id="result24"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func24(){
+         						 var num1 = Number(document.getElementById("num124").value);
+         						 var num2 = Number(document.getElementById("num224").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result24").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 25 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>25</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num125"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num225"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func25()">========</button>
+                  	<p id="result25"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func25(){
+         						 var num1 = Number(document.getElementById("num125").value);
+         						 var num2 = Number(document.getElementById("num225").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result25").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 26 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>26</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num126"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num226"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func26()">========</button>
+                  	<p id="result26"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func26(){
+         						 var num1 = Number(document.getElementById("num126").value);
+         						 var num2 = Number(document.getElementById("num226").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result26").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 27 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>27</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num127"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num227"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func27()">========</button>
+                  	<p id="result27"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func27(){
+         						 var num1 = Number(document.getElementById("num127").value);
+         						 var num2 = Number(document.getElementById("num227").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result27").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 28 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>28</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num128"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num228"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func28()">========</button>
+                  	<p id="result28"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func28(){
+         						 var num1 = Number(document.getElementById("num128").value);
+         						 var num2 = Number(document.getElementById("num228").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result28").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 29 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>29</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num129"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num229"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func29()">========</button>
+                  	<p id="result29"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func29(){
+         						 var num1 = Number(document.getElementById("num129").value);
+         						 var num2 = Number(document.getElementById("num229").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result29").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 30 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>30</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num130"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num230"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func30()">========</button>
+                  	<p id="result30"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func30(){
+         						 var num1 = Number(document.getElementById("num130").value);
+         						 var num2 = Number(document.getElementById("num230").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result30").innerHTML = result;
+          						}
+ 								</script>
+ 								              			<!-- 31 строка -->
+              <tbody id="myTable" >
+                <tr >
+                	<!-- Номер -->
+                	<td> <p>31</p> </td>
+                	<!-- Календарь -->
+                  <td> <input type="date" class="form-control" autocomplete="on" ></td>
+                  <!-- Сколько получил -->
+                  <th scope="row"><input type="number" class="form-control" placeholder="Сколько получил?" id="num131"></th>
+                  <!-- Сколько потрптил -->
+                  <td><input type="number" class="form-control" placeholder="Сколько потратил?" id="num231"></td>
+                  <!-- На что потратил -->
+                  <th scope="row"><textarea class="form-control" rows="1" ></textarea></th>
+                  <!-- кнопка подсчёта -->
+                  <td> 
+                  	<button type="button" class="btn btn-default btn-xs" onclick="func31()">========</button>
+                  	<p id="result31"></p> 
+                  </td>
+                </tr>
+                </tbody>
+<!-- Скрипт подсчёта -->
+           			<script>
+    							function func31(){
+         						 var num1 = Number(document.getElementById("num131").value);
+         						 var num2 = Number(document.getElementById("num231").value);
+          					 var result = num1 - num2;
+
+         						 document.getElementById("result31").innerHTML = result;
+          						}
+ 								</script>
+            </table>
 
           </div>
 
@@ -295,46 +1086,7 @@
       </div>
     </div>
   </div>
-	<!-- Кнопка для создания таблицы -->
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-offset-5 col-lg-2 col-xs-offset-4 col-xs-4">
-				<button class="btn  btn-l btn-block" id="addRow">
-					<div class="str">
-						<strong>
-							Добавить строку
-						</strong>
-					</div>
- 				</button>
-			</div>
-		</div>
-	</div>
-<script href="js/whot.js">
-// Получаем ссылки на таблицу и кнопку
-const table = document.getElementById('myTable');
-const addRowButton = document.getElementById('addRow');
-
-// Обработчик клика по кнопке
-addRowButton.addEventListener('click', () => {
-    // Создаем новую строку
-    const newRow = table.insertRow();
-
-    // Создаем ячейки для таблицы 
-    var cell1 = newRow.insertCell(0);
-    var cell2 = newRow.insertCell(1);
-    var cell3 = newRow.insertCell(2);
-    var cell4 = newRow.insertCell(3);
-    var cell5 = newRow.insertCell(4);
-
-    // Задаем значения ячеек (можно получать их из формы или других источников)
-    cell1.textContent = '20.11.2023'
-    cell2.textContent = '10000' ;
-    cell3.textContent = '5000';
-    cell4.textContent = 'Мороженое';
-    cell5.textContent = '5000';
-});	
-
-</script>
+	
 
 
 </body>
