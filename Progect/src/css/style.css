@@ -1,0 +1,45 @@
+body {
+background: #DEF7FE;
+}
+/*Вся навигационная панель*/
+
+.box-2  {
+margin: 1rem;
+
+}
+/*Инструкция модальное окно*/
+.Title {
+  padding: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+/*Верх модального окна*/
+.modal-title {
+  text-align: center;
+}
+/*Низ модального окна*/
+.modal-footer {
+  text-align: left;
+}
+.cls {
+  text-align: right;
+}
+/*Цвета кнопок*/
+.lr1 {
+background: #FF7514;
+
+}
+.ot {
+background: #FF7514;
+
+}
+/*Текст*/
+.hi {
+  margin-top:  2rem;
+  text-align: center;
+  color: #333
+}
+/*Фото я*/ 
+.img-me {
+margin-top:  2rem;
+}
