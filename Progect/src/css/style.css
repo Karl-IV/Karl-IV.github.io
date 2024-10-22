@@ -46,6 +46,10 @@ background: #FF7514;
   color: #333
 }
 /*Фото я*/ 
+.photo-2 {
+align-items: center;
+}
+
 .leftimg {
   float: left;
 margin-top:  5rem;
