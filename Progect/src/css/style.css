@@ -48,12 +48,16 @@ background: #FF7514;
 /*Фото я*/ 
 .photo-2 {
 align-items: center;
+  float: left;
+margin-top:  5rem;
+margin-left: 50rem;
+display: inline-block;
 }
 
 .leftimg {
   float: left;
 margin-top:  5rem;
-margin-left: 10rem;
+margin-left: 50rem;
 display: inline-block;
 }
 .rightimg {
