@@ -3,8 +3,14 @@ background: #DEF7FE;
 }
 /*Вся навигационная панель*/
 
-.box-2  {
+.box-2 {
 margin: 1rem;
+
+}
+.box-1 {
+  margin: 1rem;
+  color: #000000
+  background: #ff7514;
 
 }
 /*Инструкция модальное окно*/
@@ -40,6 +46,26 @@ background: #FF7514;
   color: #333
 }
 /*Фото я*/ 
-.img-me {
-margin-top:  2rem;
+.leftimg {
+  float: left;
+margin-top:  5rem;
+margin-left: 10rem;
+display: inline-block;
+}
+.rightimg {
+float: right;
+display: inline-block;
+margin-top: 5rem;
+margin-right: 10rem;
+
+}
+/*таблица*/
+.tb {
+  
+  width: 10rem;
+  width: 10rem;
+  color: #000000
+}
+.dwath {
+  color: #fff
 }
